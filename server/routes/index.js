@@ -1,6 +1,5 @@
 let express = require('express');
 let router = express.Router();
-let passport = require('passport');
 
 let indexController = require('../controllers/index');
 
@@ -33,6 +32,5 @@ router.post('/register', indexController.processRegistrationPage);
 
 /* GET - perform the logout request */
 router.get('/logout', indexController.performLogout);
-
 
 module.exports = router;

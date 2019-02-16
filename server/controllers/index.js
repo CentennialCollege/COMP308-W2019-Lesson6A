@@ -49,7 +49,7 @@ module.exports.displayLoginPage = (req, res, next) => {
 
 module.exports.processLoginPage = 
     passport.authenticate('local', {
-    successRedirect: '/',
+    successRedirect: '/contact-list',
     failureRedirect: '/login',
     failureFlash: 'bad login',
     failureMessage: 'bad login'
